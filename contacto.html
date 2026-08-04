@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | DEV_CORE</title>
+  <meta name="description" content="Contacto para proyectos web, paginas de negocio y portafolios profesionales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">DEV_CORE</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navegacion principal">
+      <a href="index.html" data-nav="home" data-i18n="nav.home">Inicio</a>
+      <a href="proyectos.html" data-nav="projects" data-i18n="nav.projects">Proyectos</a>
+      <a href="skills.html" data-nav="skills" data-i18n="nav.skills">Habilidades</a>
+      <a href="contacto.html" data-nav="contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-icon" href="https://github.com/Diego-1990" target="_blank" rel="noreferrer" aria-label="GitHub" data-github-link>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+      </a>
+      <a class="header-icon" href="#" aria-label="Correo" data-email-link>
+        <span class="material-symbols-outlined">mail</span>
+      </a>
+      <button class="language-toggle" type="button" aria-label="Cambiar idioma" data-lang-toggle>US</button>
+      <button class="theme-toggle" type="button" aria-label="Cambiar tema" data-theme-toggle><span class="material-symbols-outlined">light_mode</span></button>
+      <a class="initialize" href="assets/cv-diego-sandoval.pdf" download data-i18n="nav.cta">Mi CV</a>
+    </div>
+  </header>
+
+  <div class="status-marquee">
+    <div class="status-track tech-track">
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""> HTML</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""> CSS</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""> JavaScript</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt=""> SQL</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""> PostgreSQL</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""> HTML</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""> CSS</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""> JavaScript</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt=""> SQL</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""> PostgreSQL</span>
+    </div>
+  </div>
+
+  <main class="page-shell">
+    <section class="page-title compact-title">
+      <h1 data-i18n="contact.title">Contacto</h1>
+      <p data-i18n="contact.lead">Si tu negocio necesita organizar procesos, vender mejor o tener una presencia digital mas profesional, podemos construir una solucion web a la medida.</p>
+    </section>
+
+    <section class="contact-panel">
+      <div class="contact-heading">
+        <h2 data-i18n="contact.formTitle">Contactame </h2>
+        <p data-i18n="contact.formLead">Cuentame que necesitas mejorar y te ayudo a convertirlo en una aplicacion web clara, funcional y lista para crecer.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label>
+          <span data-i18n="contact.name">Nombre</span>
+          <input type="text" name="name" placeholder="TU_NOMBRE" data-i18n-placeholder="contact.namePlaceholder">
+        </label>
+        <label>
+          <span data-i18n="contact.email">Correo</span>
+          <input type="email" name="email" placeholder="TU_CORREO" data-i18n-placeholder="contact.emailPlaceholder">
+        </label>
+        <label>
+          <span data-i18n="contact.message">Mensaje</span>
+          <textarea name="message" rows="5" placeholder="DESCRIBE_TU_PROYECTO" data-i18n-placeholder="contact.messagePlaceholder"></textarea>
+        </label>
+        <button class="button primary full" type="submit" data-i18n="contact.send">Enviar mensaje</button>
+        <p class="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a href="index.html" data-i18n="nav.home">Inicio</a><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a><a href="https://github.com/Diego-1990" target="_blank" rel="noreferrer" data-github-link>GitHub</a><a href="https://www.linkedin.com/in/diego-sandoval-0b5636412/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

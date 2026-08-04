@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imperial Parfums | DEV_CORE</title>
+  <meta name="description" content="Caso de proyecto Imperial Parfums: ecommerce fullstack de perfumes premium.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="projects">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">DEV_CORE</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navegacion principal">
+      <a href="index.html" data-nav="home" data-i18n="nav.home">Inicio</a>
+      <a href="proyectos.html" data-nav="projects" data-i18n="nav.projects">Proyectos</a>
+      <a href="skills.html" data-nav="skills" data-i18n="nav.skills">Habilidades</a>
+      <a href="contacto.html" data-nav="contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-icon" href="https://github.com/Diego-1990" target="_blank" rel="noreferrer" aria-label="GitHub" data-github-link>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+      </a>
+      <a class="header-icon" href="#" aria-label="Correo" data-email-link>
+        <span class="material-symbols-outlined">mail</span>
+      </a>
+      <button class="language-toggle" type="button" aria-label="Cambiar idioma" data-lang-toggle>US</button>
+      <button class="theme-toggle" type="button" aria-label="Cambiar tema" data-theme-toggle><span class="material-symbols-outlined">light_mode</span></button>
+      <a class="initialize" href="assets/cv-diego-sandoval.pdf" download data-i18n="nav.cta">Mi CV</a>
+    </div>
+  </header>
+
+  <div class="status-marquee">
+    <div class="status-track tech-track">
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt=""> React</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt=""> Vite</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""> PostgreSQL</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt=""> Supabase</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt=""> React</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt=""> Vite</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""> PostgreSQL</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt=""> Supabase</span>
+    </div>
+  </div>
+
+  <main class="page-shell">
+    <section class="project-detail-hero">
+      <div>
+        <a class="back-link" href="proyectos.html" data-i18n="detail.back">Volver a proyectos</a>
+        <h1 data-i18n="imperial.title">Imperial Parfums</h1>
+        <p data-i18n="imperial.lead">Tienda premium de perfumes con catalogo, autenticacion JWT, roles, carrito persistente y paneles para vendedor y administrador.</p>
+      </div>
+      <div class="imperial-detail-logo">
+        <img src="assets/logo-imperial.jpeg" alt="Logo de Imperial Parfums">
+      </div>
+    </section>
+
+    <section class="detail-layout">
+      <article class="detail-panel">
+        <h2 data-i18n="detail.overview">Resumen</h2>
+        <p data-i18n="imperial.overview">Imperial Parfums simula una plataforma ecommerce real para venta de perfumes de lujo. El proyecto separa frontend y backend, protege rutas por roles y conecta el carrito, catalogo y cuenta del usuario con una API REST.</p>
+      </article>
+
+      <article class="detail-panel">
+        <h2 data-i18n="detail.features">Funciones principales</h2>
+        <ul class="feature-list">
+          <li data-i18n="imperial.featureOne">Registro, login, JWT y refresh tokens.</li>
+          <li data-i18n="imperial.featureTwo">Roles USER, SELLER y ADMIN.</li>
+          <li data-i18n="imperial.featureThree">Catalogo publico con busqueda y filtros.</li>
+          <li data-i18n="imperial.featureFour">Carrito conectado al backend e historial de pedidos.</li>
+          <li data-i18n="imperial.featureFive">Panel vendedor para productos y panel admin para usuarios y ordenes.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <h2 data-i18n="detail.screens">Pantallas del proyecto</h2>
+        <span>Galeria del proyecto</span>
+      </div>
+      <div class="case-gallery detail-gallery" aria-label="Galeria visual de Imperial Parfums">
+        <figure class="case-shot hero-shot">
+          <img src="assets/imperial-parfums1.png" alt="Inicio de Imperial Parfums con hero de perfume">
+          <figcaption>
+            <strong data-i18n="projects.caseHome">Inicio de marca</strong>
+            <span data-i18n="imperial.screenHome">Presenta la identidad premium del ecommerce y lleva al usuario a explorar perfumes o crear cuenta.</span>
+          </figcaption>
+        </figure>
+        <figure class="case-shot catalog-shot">
+          <img src="assets/imperial-parfums2.png" alt="Catalogo de Imperial Parfums con busqueda y filtros">
+          <figcaption>
+            <strong data-i18n="projects.caseCatalog">Catalogo con filtros</strong>
+            <span data-i18n="imperial.screenCatalog">Permite buscar fragancias y filtrar por genero, notas olfativas y orden de productos.</span>
+          </figcaption>
+        </figure>
+        <figure class="case-shot detail-shot">
+          <img src="assets/imperial-parfums3.png" alt="Detalle de producto Velvet Amber en Imperial Parfums">
+          <figcaption>
+            <strong data-i18n="projects.caseDetail">Detalle de producto</strong>
+            <span data-i18n="imperial.screenDetail">Muestra precio, descripcion, notas y accion principal para agregar el perfume al carrito.</span>
+          </figcaption>
+        </figure>
+        <figure class="case-shot account-shot">
+          <img src="assets/imperial-parfums4.png" alt="Pantalla de login y registro de Imperial Parfums">
+          <figcaption>
+            <strong data-i18n="projects.caseAccount">Login y registro</strong>
+            <span data-i18n="imperial.screenAccount">Centraliza acceso y creacion de cuenta para guardar la experiencia del usuario.</span>
+          </figcaption>
+        </figure>
+        <figure class="case-shot cart-shot">
+          <img src="assets/imperial-parfums5.png" alt="Carrito de compras de Imperial Parfums">
+          <figcaption>
+            <strong data-i18n="projects.caseCart">Carrito y checkout</strong>
+            <span data-i18n="imperial.screenCart">Resume productos seleccionados, subtotal y flujo para continuar compra o ir a checkout.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <h2 data-i18n="detail.stack">Stack tecnico</h2>
+        <span>FULLSTACK</span>
+      </div>
+      <div class="tech-tags large-tags">
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt=""> React</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt=""> Vite</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""> CSS</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java 17</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""> PostgreSQL</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt=""> Supabase</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a href="index.html" data-i18n="nav.home">Inicio</a><a href="contacto.html" data-i18n="nav.contact">Contacto</a><a href="https://github.com/Diego-1990" target="_blank" rel="noreferrer" data-github-link>GitHub</a><a href="https://www.linkedin.com/in/diego-sandoval-0b5636412/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quezza Restaurant POS | DEV_CORE</title>
+  <meta name="description" content="Caso de proyecto Quezza Restaurant POS: sistema web POS para administracion de restaurantes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="projects">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">DEV_CORE</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navegacion principal">
+      <a href="index.html" data-nav="home" data-i18n="nav.home">Inicio</a>
+      <a href="proyectos.html" data-nav="projects" data-i18n="nav.projects">Proyectos</a>
+      <a href="skills.html" data-nav="skills" data-i18n="nav.skills">Habilidades</a>
+      <a href="contacto.html" data-nav="contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-icon" href="https://github.com/Diego-1990" target="_blank" rel="noreferrer" aria-label="GitHub" data-github-link><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""></a>
+      <a class="header-icon" href="#" aria-label="Correo" data-email-link><span class="material-symbols-outlined">mail</span></a>
+      <button class="language-toggle" type="button" aria-label="Cambiar idioma" data-lang-toggle>US</button>
+      <button class="theme-toggle" type="button" aria-label="Cambiar tema" data-theme-toggle><span class="material-symbols-outlined">light_mode</span></button>
+      <a class="initialize" href="assets/cv-diego-sandoval.pdf" download data-i18n="nav.cta">Mi CV</a>
+    </div>
+  </header>
+
+  <div class="status-marquee">
+    <div class="status-track tech-track">
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt=""> Vue 3</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt=""> Tailwind CSS</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java 17</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""> PostgreSQL</span>
+      <span>JWT</span>
+      <span>WebSockets</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt=""> Vue 3</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java 17</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span>
+    </div>
+  </div>
+
+  <main class="page-shell">
+    <section class="project-detail-hero">
+      <div>
+        <a class="back-link" href="proyectos.html" data-i18n="detail.back">Volver a proyectos</a>
+        <h1 data-i18n="projects.quezzaTitle">Quezza Restaurant POS</h1>
+        <p data-i18n="quezza.lead">Sistema web de administracion para restaurantes con gestion de mesas, ordenes, cocina, caja, inventario y usuarios por roles.</p>
+      </div>
+      <div class="restaurant-detail-logo">
+        <img src="assets/quezza-logo.png" alt="Logo de Quezza Restaurant POS">
+      </div>
+    </section>
+
+    <section class="detail-layout">
+      <article class="detail-panel">
+        <h2 data-i18n="detail.overview">Resumen</h2>
+        <p data-i18n="quezza.overview">Quezza Restaurant POS centraliza el flujo operativo de un restaurante: meseros toman ordenes, cocina actualiza pedidos, caja cobra cuentas y administracion controla usuarios, productos e inventario desde una plataforma conectada.</p>
+      </article>
+      <article class="detail-panel">
+        <h2 data-i18n="detail.features">Funciones principales</h2>
+        <ul class="feature-list">
+          <li data-i18n="quezza.featureOne">Gestion de mesas y toma de ordenes por mesero.</li>
+          <li data-i18n="quezza.featureTwo">Pantalla de cocina para seguimiento de pedidos.</li>
+          <li data-i18n="quezza.featureThree">Caja, pagos y cuentas pendientes.</li>
+          <li data-i18n="quezza.featureFour">Productos, categorias, inventario basico y menu QR publico.</li>
+          <li data-i18n="quezza.featureFive">Login con JWT, BCrypt y control de acceso por roles.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <h2 data-i18n="quezza.rolesTitle">Roles y modulos</h2>
+        <span>Operacion del restaurante</span>
+      </div>
+      <div class="capabilities-grid">
+        <article><span class="material-symbols-outlined">admin_panel_settings</span><strong>ADMIN</strong><p data-i18n="quezza.roleAdmin">Usuarios, reportes, configuracion y administracion general.</p></article>
+        <article><span class="material-symbols-outlined">table_restaurant</span><strong>MESERO</strong><p data-i18n="quezza.roleWaiter">Mesas, toma de ordenes y seguimiento de cuentas.</p></article>
+        <article><span class="material-symbols-outlined">restaurant</span><strong>COCINA</strong><p data-i18n="quezza.roleKitchen">Visualizacion y actualizacion de pedidos en preparacion.</p></article>
+        <article><span class="material-symbols-outlined">point_of_sale</span><strong>CAJERO</strong><p data-i18n="quezza.roleCashier">Cobros, pagos y cierre de cuentas pendientes.</p></article>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <h2 data-i18n="detail.screens">Pantallas del proyecto</h2>
+        <span>QUEZZA_UI</span>
+      </div>
+      <div class="case-gallery detail-gallery" aria-label="Galeria visual de Quezza Restaurant POS">
+        <figure class="case-shot hero-shot">
+          <img src="assets/quezza1.png" alt="Dashboard de Quezza Restaurant POS">
+          <figcaption><strong data-i18n="quezza.screenDashboardTitle">Dashboard</strong><span data-i18n="quezza.screenDashboard">Muestra ventas, ingresos, mesas activas y ordenes pendientes para supervision general.</span></figcaption>
+        </figure>
+        <figure class="case-shot catalog-shot">
+          <img src="assets/quezza2.png" alt="Mapa de mesas de Quezza Restaurant POS">
+          <figcaption><strong data-i18n="quezza.screenTablesTitle">Mapa de mesas</strong><span data-i18n="quezza.screenTables">Permite ver disponibilidad, ocupacion y estado de limpieza de las mesas del salon.</span></figcaption>
+        </figure>
+        <figure class="case-shot detail-shot">
+          <img src="assets/quezza3.png" alt="POS para tomar ordenes en Quezza Restaurant POS">
+          <figcaption><strong data-i18n="quezza.screenPosTitle">Toma de ordenes</strong><span data-i18n="quezza.screenPos">El mesero selecciona mesa, productos y cantidades para construir la cuenta del cliente.</span></figcaption>
+        </figure>
+        <figure class="case-shot account-shot">
+          <img src="assets/quezza4.png" alt="Cocina en tiempo real de Quezza Restaurant POS">
+          <figcaption><strong data-i18n="quezza.screenKitchenTitle">Cocina en tiempo real</strong><span data-i18n="quezza.screenKitchen">La cocina recibe pedidos, cambia estados y avisa cuando una orden esta lista.</span></figcaption>
+        </figure>
+        <figure class="case-shot cart-shot">
+          <img src="assets/quezza5.png" alt="Inventario de Quezza Restaurant POS">
+          <figcaption><strong data-i18n="quezza.screenInventoryTitle">Inventario</strong><span data-i18n="quezza.screenInventory">Controla stock, minimos, mermas y edicion de ingredientes usados por el restaurante.</span></figcaption>
+        </figure>
+        <figure class="case-shot hero-shot">
+          <img src="assets/quezza6.png" alt="Caja de Quezza Restaurant POS">
+          <figcaption><strong data-i18n="quezza.screenCashierTitle">Caja</strong><span data-i18n="quezza.screenCashier">Agrupa cuentas pendientes, selecciona una orden y prepara el cobro final.</span></figcaption>
+        </figure>
+        <figure class="case-shot catalog-shot">
+          <img src="assets/quezza7.png" alt="Registro de pago de Quezza Restaurant POS">
+          <figcaption><strong data-i18n="quezza.screenPaymentTitle">Registro de pago</strong><span data-i18n="quezza.screenPayment">Registra monto, metodo de pago y calcula el restante para cerrar la venta.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <h2 data-i18n="detail.stack">Stack tecnico</h2>
+        <span>Stack fullstack</span>
+      </div>
+      <div class="tech-tags large-tags">
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt=""> Vue 3</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt=""> Tailwind CSS</span>
+        <span class="tech-pill">Pinia</span>
+        <span class="tech-pill">Axios</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java 17</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span>
+        <span class="tech-pill">Spring Security</span>
+        <span class="tech-pill">JWT</span>
+        <span class="tech-pill">WebSockets</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" alt=""> Hibernate</span>
+        <span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""> PostgreSQL</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a href="index.html" data-i18n="nav.home">Inicio</a><a href="contacto.html" data-i18n="nav.contact">Contacto</a><a href="https://github.com/Diego-1990" target="_blank" rel="noreferrer" data-github-link>GitHub</a><a href="https://www.linkedin.com/in/diego-sandoval-0b5636412/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

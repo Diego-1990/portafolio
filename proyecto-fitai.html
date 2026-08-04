@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitAI Coach | DEV_CORE</title>
+  <meta name="description" content="Caso de proyecto FitAI Coach: plataforma fitness con rutinas y dietas generadas con IA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="projects">
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">DEV_CORE</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navegacion principal">
+      <a href="index.html" data-nav="home" data-i18n="nav.home">Inicio</a>
+      <a href="proyectos.html" data-nav="projects" data-i18n="nav.projects">Proyectos</a>
+      <a href="skills.html" data-nav="skills" data-i18n="nav.skills">Habilidades</a>
+      <a href="contacto.html" data-nav="contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-icon" href="https://github.com/Diego-1990" target="_blank" rel="noreferrer" aria-label="GitHub" data-github-link><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""></a>
+      <a class="header-icon" href="#" aria-label="Correo" data-email-link><span class="material-symbols-outlined">mail</span></a>
+      <button class="language-toggle" type="button" aria-label="Cambiar idioma" data-lang-toggle>US</button>
+      <button class="theme-toggle" type="button" aria-label="Cambiar tema" data-theme-toggle><span class="material-symbols-outlined">light_mode</span></button>
+      <a class="initialize" href="assets/cv-diego-sandoval.pdf" download data-i18n="nav.cta">Mi CV</a>
+    </div>
+  </header>
+  <div class="status-marquee"><div class="status-track tech-track"><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""> PostgreSQL</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt=""> Supabase</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""> HTML</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""> JavaScript</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""> PostgreSQL</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt=""> Supabase</span></div></div>
+  <main class="page-shell">
+    <section class="project-detail-hero">
+      <div>
+        <a class="back-link" href="proyectos.html" data-i18n="detail.back">Volver a proyectos</a>
+        <h1 data-i18n="projects.fitaiTitle">FitAI Coach</h1>
+        <p data-i18n="fitai.lead">Aplicacion fitness fullstack para atletas que genera rutinas y dietas con IA, registra progreso corporal y muestra estadisticas en un dashboard profesional.</p>
+      </div>
+      <img src="assets/Fiti-ai1.png" alt="Pantalla principal de FitAI Coach">
+    </section>
+    <section class="detail-layout">
+      <article class="detail-panel"><h2 data-i18n="detail.overview">Resumen</h2><p data-i18n="fitai.overview">FitAI Coach esta pensado como una plataforma SaaS fitness inteligente. Su enfoque principal es ayudar al atleta a crear planes personalizados, consultar ejercicios y medir avances desde una interfaz moderna.</p></article>
+      <article class="detail-panel"><h2 data-i18n="detail.features">Funciones principales</h2><ul class="feature-list"><li data-i18n="fitai.featureOne">Rutinas y dietas generadas con IA.</li><li data-i18n="fitai.featureTwo">Perfil fitness con objetivo, experiencia, equipo y lesiones.</li><li data-i18n="fitai.featureThree">Catalogo de ejercicios y registro de progreso corporal.</li><li data-i18n="fitai.featureFour">Dashboard con metricas, planes activos y estadisticas.</li><li data-i18n="fitai.featureFive">Panel admin preparado para gestionar ejercicios.</li></ul></article>
+    </section>
+    <section class="detail-section">
+      <div class="section-heading">
+        <h2 data-i18n="detail.screens">Pantallas del proyecto</h2>
+        <span>Galeria del proyecto</span>
+      </div>
+      <div class="case-gallery detail-gallery" aria-label="Galeria visual de FitAI Coach">
+        <figure class="case-shot hero-shot">
+          <img src="assets/Fiti-ai1.png" alt="Inicio de FitAI Coach">
+          <figcaption><strong data-i18n="fitai.screenHomeTitle">Inicio y propuesta</strong><span data-i18n="fitai.screenHome">Presenta la plataforma fitness y orienta al usuario hacia rutinas, dietas y seguimiento.</span></figcaption>
+        </figure>
+        <figure class="case-shot catalog-shot">
+          <img src="assets/Fit-ai2.png" alt="Perfil fitness de FitAI Coach">
+          <figcaption><strong data-i18n="fitai.screenProfileTitle">Perfil fitness</strong><span data-i18n="fitai.screenProfile">Guarda datos del atleta como objetivo, experiencia, equipo disponible y restricciones.</span></figcaption>
+        </figure>
+        <figure class="case-shot detail-shot">
+          <img src="assets/Fit-ai3.png" alt="Dashboard de FitAI Coach">
+          <figcaption><strong data-i18n="fitai.screenDashboardTitle">Dashboard</strong><span data-i18n="fitai.screenDashboard">Resume metricas, progreso y planes activos para consultar el estado del usuario rapido.</span></figcaption>
+        </figure>
+        <figure class="case-shot account-shot">
+          <img src="assets/Fit-ai4.png" alt="Generacion de planes en FitAI Coach">
+          <figcaption><strong data-i18n="fitai.screenPlansTitle">Rutinas y dietas con IA</strong><span data-i18n="fitai.screenPlans">Permite generar planes personalizados para entrenamiento y alimentacion segun el perfil.</span></figcaption>
+        </figure>
+        <figure class="case-shot cart-shot">
+          <img src="assets/Fit-ai5.png" alt="Catalogo de ejercicios de FitAI Coach">
+          <figcaption><strong data-i18n="fitai.screenExercisesTitle">Catalogo de ejercicios</strong><span data-i18n="fitai.screenExercises">Organiza ejercicios con informacion util para entrenar de forma mas clara.</span></figcaption>
+        </figure>
+        <figure class="case-shot hero-shot">
+          <img src="assets/Fit-ai6.png" alt="Panel administrativo de FitAI Coach">
+          <figcaption><strong data-i18n="fitai.screenAdminTitle">Panel admin</strong><span data-i18n="fitai.screenAdmin">Seccion preparada para gestionar ejercicios y mantener contenido del sistema.</span></figcaption>
+        </figure>
+        <figure class="case-shot catalog-shot">
+          <img src="assets/Fit-ai7.png" alt="Registro de progreso de FitAI Coach">
+          <figcaption><strong data-i18n="fitai.screenProgressTitle">Progreso corporal</strong><span data-i18n="fitai.screenProgress">Registra avances fisicos y ayuda a visualizar cambios durante el tiempo.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="detail-section"><div class="section-heading"><h2 data-i18n="detail.stack">Stack tecnico</h2><span>FULLSTACK</span></div><div class="tech-tags large-tags"><span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""> Java 17</span><span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""> Spring Boot</span><span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""> PostgreSQL</span><span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt=""> Supabase</span><span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""> HTML</span><span class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""> JavaScript</span></div></section>
+  </main>
+  <footer class="site-footer"><div><a href="index.html" data-i18n="nav.home">Inicio</a><a href="contacto.html" data-i18n="nav.contact">Contacto</a><a href="https://github.com/Diego-1990" target="_blank" rel="noreferrer" data-github-link>GitHub</a><a href="https://www.linkedin.com/in/diego-sandoval-0b5636412/" target="_blank" rel="noreferrer">LinkedIn</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
