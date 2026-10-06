@@ -14,7 +14,7 @@ const EMAIL_DOMAIN = "gmail";
 const EMAIL_TLD = "com";
 const PROFILE_EMAIL = `${EMAIL_USER}@${EMAIL_DOMAIN}.${EMAIL_TLD}`;
 const GITHUB_URL = "https://github.com/Diego-1990";
-const LINKEDIN_URL = "https://www.linkedin.com/in/diego-sandoval-0b5636412/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/sandoval-vallin-diego-oswaldo-922343374/?isSelfProfile=true";
 
 const translations = {
   es: {
